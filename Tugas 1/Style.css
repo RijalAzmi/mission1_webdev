@@ -1,0 +1,81 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: 100px 100px 100px 100px 100px 100px;
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-area: merah;
+  grid-column: 1;
+  grid-row: 1/4;
+  background-color: red;
+  color: yellow;
+}
+.item2 {
+  grid-area: hijau;
+  grid-column: 2/4;
+  grid-row: 1;
+  background-color: green;
+}
+.item3 {
+  grid-area: ungu;
+  grid-column: 4/6;
+  grid-row: 1;
+  background-color: purple;
+}
+.item4 {
+  grid-area: pink;
+  grid-column: 2;
+  grid-row: 2/5;
+  background-color: pink;
+}
+.item5 {
+  grid-area: hijau muda;
+  grid-column: 3/6;
+  grid-row: 2;
+  background-color: orange;
+}
+.item6 {
+  grid-area: biru;
+  grid-column: 3;
+  grid-row: 3/5;
+  background-color: green;
+}
+.item7 {
+  grid-area: biru tua;
+  grid-column: 4/6;
+  grid-row: 3/7;
+  background-color: blue;
+  color: yellow;
+}
+.item8 {
+  grid-area: jingga;
+  grid-column: 1/2;
+  grid-row: 4/7;
+  background-color: orange;
+}
+.item9 {
+  grid-area: kuning;
+  grid-column: 2/4;
+  grid-row: 5/7;
+  background-color: yellow;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-areas: 
+  'merah hijau hijau ungu ungu'
+  'merah pink hijau_muda hijau_muda hijau_muda'
+  'merah pink biru biru_tua biru_tua'
+  'jingga pink biru biru_tua biru_tua'
+  'jingga kuning kuning biru_tua biru_tua'
+  'jingga kuning kuning biru_tua biru_tua';
+}
